@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONOR Uzbekistan | Rasmiy do'kon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">HONOR</a>
+
+    <nav class="nav">
+        <a href="#phones">Smartfonlar</a>
+        <a href="#tablets">Planshetlar</a>
+        <a href="#laptops">Noutbuklar</a>
+        <a href="#accessories">Aksessuarlar</a>
+    </nav>
+
+    <div class="header-actions">
+        <button id="searchBtn" aria-label="Qidirish">⌕</button>
+        <button id="cartBtn" aria-label="Savatcha">
+            🛒 <span id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+</header>
+
+<div class="search-box" id="searchBox">
+    <input type="text" id="searchInput"
+           placeholder="Mahsulot qidirish...">
+</div>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">YANGI AVLOD TEXNOLOGIYASI</span>
+            <h1>HONOR Magic Series</h1>
+            <p>Kelajak texnologiyasini bugun his eting.</p>
+            <a href="#phones" class="main-btn">Batafsil ko'rish →</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=900"
+                 alt="Zamonaviy smartfon">
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Kategoriyalar</h2>
+        <div class="category-list">
+            <a href="#phones">📱 Smartfonlar</a>
+            <a href="#tablets">📲 Planshetlar</a>
+            <a href="#laptops">💻 Noutbuklar</a>
+            <a href="#accessories">🎧 Aksessuarlar</a>
+        </div>
+    </section>
+
+    <section class="products-section" id="phones">
+        <div class="section-heading">
+            <h2>Bizning mahsulotlar</h2>
+            <p>HONOR texnologiyalari bilan tanishing</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-category="all">Barchasi</button>
+            <button class="filter" data-category="phone">Smartfonlar</button>
+            <button class="filter" data-category="tablet">Planshetlar</button>
+            <button class="filter" data-category="laptop">Noutbuklar</button>
+            <button class="filter" data-category="accessory">Aksessuarlar</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo">
+        <div>
+            <span>HONOR TECHNOLOGY</span>
+            <h2>Texnologiya sizning qo'lingizda.</h2>
+            <p>Har kuni yangi imkoniyatlarni kashf eting.</p>
+            <a href="#phones" class="main-btn">Xarid qilish</a>
+        </div>
+    </section>
+</main>
+
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-panel">
+        <div class="cart-header">
+            <h2>Savatcha</h2>
+            <button id="closeCart">✕</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-footer">
+            <h3>Jami: <span id="totalPrice">0</span> so'm</h3>
+            <button id="checkoutBtn">Buyurtma berish</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <a href="#" class="logo">HONOR</a>
+    <p>© 2026 HONOR Shop. Barcha huquqlar himoyalangan.</p>
+    <p>Bu mustaqil demo loyiha, rasmiy HONOR sayti emas.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
